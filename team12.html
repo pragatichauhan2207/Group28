@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlPart</title>
+    <script src="script1.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>LDU` Factorisation</h1>
+    <h2>Enter numbers for Matrix A:- </h2>
+    <br>
+    <div>
+        Enter a<sub>11</sub>:
+        <input type="text" id="ida11" style="margin-right: 30px;">
+
+        Enter a<sub>12</sub>:
+        <input type="text" id="ida12"
+        style="margin-right: 30px;">
+
+        Enter a<sub>13</sub>:
+        <input type="text" id="ida13"
+        style="margin-right: 30px;">
+    </div>
+    <div> 
+        Enter a<sub>21</sub>:
+        <input type="text" id="ida21" style="margin-right: 30px;">
+
+        Enter a<sub>22</sub>:
+        <input type="text" id="ida22"
+        style="margin-right: 30px;">
+
+        Enter a<sub>23</sub>:
+        <input type="text" id="ida23"
+        style="margin-right: 30px;">
+
+    </div>
+    <div>
+        Enter a<sub>31</sub>:
+        <input type="text" id="ida31" style="margin-right: 30px;">
+
+        Enter a<sub>32</sub>:
+        <input type="text" id="ida32"
+        style="margin-right: 30px;">
+
+        Enter a<sub>33</sub>:
+        <input type="text" id="ida33"
+        style="margin-right: 30px;">
+    </div>
+    <br>
+    <h2> Calculating E21 by Matrix by A </h2>
+    <br>
+    <p>To find E21 , firstly we need to find the value of x . </p>
+    <p>To find x , apply row operation i.e, R2=R2+xR1 it means x= -(a2/a1) and we have to Calculate -(a2/a1) of matrix A</p>
+    
+        <div>
+            <button onclick="findx()">Click here to get E <sub>21</sub> Matrix</button>
+            
+        </div>
+        <br>
+        <div>
+        e<sub>11</sub>:
+        <input type="text" value="1"disabled  style="margin-right: 30px;">
+
+        e<sub>12</sub>:
+        <input type="text" value="0" disabled 
+        style="margin-right: 30px;">
+
+        e<sub>13</sub>:
+        <input type="text" value="0" disabled 
+        style="margin-right: 30px;">
+    </div>
+    <div>
+        e<sub>21</sub>:
+        <input type="text"  id="ide21" style="margin-right: 30px;">
+
+        e<sub>22</sub>:
+        <input type="text" value="1" disabled 
+        style="margin-right: 30px;">
+
+        e<sub>23</sub>:
+        <input type="text" value="0" disabled 
+        style="margin-right: 30px;">
+
+    </div>
+    <div>
+        e<sub>31</sub>:
+        <input type="text" value="0" disabled  style="margin-right: 30px;">
+
+        e<sub>32</sub>:
+        <input type="text" value="0" disabled 
+        style="margin-right: 30px;">
+
+        e<sub>33</sub>:
+        <input type="text" value="1" disabled 
+        style="margin-right: 30px;">
+    </div>
+
+    <h2> Calculating E31 by Matrix A </h2>
+    <!-- <br> -->
+    <p>To find E31 (=N ) , firstly we need to find the value of y . </p>
+    <p>To find y , apply row operation i.e, R3=R3+yR1 it means y= -(a3/a1) and we have to Calculate -(a3/a1) of matrix A</p>
+
+    <div>
+    <button onclick="finds()">Click here to get E31 Matrix</button>
+    </div>
+
+<br>
+            <div>
+            n<sub>11</sub>:
+            <input type="text" value="1"disabled  style="margin-right: 30px;">
+
+            n<sub>12</sub>:
+            <input type="text" value="0" disabled 
+            style="margin-right: 30px;">
+
+            n<sub>13</sub>:
+            <input type="text" value="0" disabled 
+            style="margin-right: 30px;">
+            
+            </div>
+            <div>
+            n<sub>21</sub>:
+            <input type="text" value="0" disabled  style="margin-right: 30px;">
+
+            n<sub>22</sub>:
+            <input type="text" value="1" disabled 
+            style="margin-right: 30px;">
+
+            n<sub>23</sub>:
+            <input type="text" value="0" disabled 
+            style="margin-right: 30px;">
+
+            </div>
+            <div>
+            n<sub>31</sub>:
+            <input type="text" id="idn31"  style="margin-right: 30px;">
+
+            n<sub>32</sub>:
+            <input type="text" value="0" disabled 
+            style="margin-right: 30px;">
+
+            n<sub>33</sub>:
+            <input type="text" value="1" disabled 
+            style="margin-right: 30px;">
+            </div>
+
