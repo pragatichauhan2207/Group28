@@ -235,3 +235,85 @@ function findp() {
     
 
 }
+function findi(){
+
+    let q11
+    let q12
+    let q13
+    let q21
+    let q22
+    let q23
+    let q31
+    let q32
+    let q33
+
+    let m11
+    let m12
+    let m13
+    let m21
+    let m22
+    let m23
+    let m31
+    let m32
+    let m33
+
+    
+
+
+    q11=parseFloat(document.getElementById("idq11").value);
+    q12=parseFloat(document.getElementById("idq12").value);
+    q13=parseFloat(document.getElementById("idq13").value);
+    q21=parseFloat(document.getElementById("idq21").value);
+    q22=parseFloat(document.getElementById("idq22").value);
+    q23=parseFloat(document.getElementById("idq23").value);
+    q31=parseFloat(document.getElementById("idq31").value);
+    q32=parseFloat(document.getElementById("idq32").value);
+    q33=parseFloat(document.getElementById("idq33").value);
+    
+    
+    m11=parseFloat(document.getElementById("idm11").value);
+    m12=parseFloat(document.getElementById("idm12").value);
+    m13=parseFloat(document.getElementById("idm13").value);
+    m21=parseFloat(document.getElementById("idm21").value);
+    m22=parseFloat(document.getElementById("idm22").value);
+    m23=parseFloat(document.getElementById("idm23").value);
+    m31=parseFloat(document.getElementById("idm31").value);
+    m32=parseFloat(document.getElementById("idm32").value);
+    m33=parseFloat(document.getElementById("idm33").value);
+    
+    
+    
+    
+    
+
+    
+    let i11=(q11*m11)+(q12*m21)+(q13*m31)
+    document.getElementById("idi11").value=i11;
+
+    let i12=(q11*m12)+(q12*m22)+(q13*m32)
+    document.getElementById("idi12").value=i12;
+
+    let i13=(q11*m13)+(q12*m23)+(q13*m33)
+    document.getElementById("idi13").value=i13;
+
+
+    let i21=(q21*m11)+(q22*m21)+(q23*m31)
+    document.getElementById("idi21").value=i21;
+
+    let i22=(q21*m12)+(q22*m22)+(q23*m32)
+    document.getElementById("idi22").value=i22;
+
+    let i23=(q21*m13)+(q22*m23)+(q23*m33)
+    document.getElementById("idi23").value=i23;
+
+
+    let i31=(q31*m11)+(q32*m21)+(q33*m31)
+    document.getElementById("idi31").value=i31;
+
+    let i32=(q31*m12)+(q32*m22)+(q33*m32)
+    document.getElementById("idi32").value=i32;
+    
+    let i33=(q31*m13)+(q32*m23)+(q33*m33)
+    document.getElementById("idi33").value=i33;
+
+}
